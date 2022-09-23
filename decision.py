@@ -8,7 +8,7 @@ WeekDay = int(input('Введите номер дня недели: '))
 
 if WeekDay>7 or WeekDay<1:
     print('В неделе 7 дней введите значение от 1 до 7')
-WeekDay = int(input('Введите номер дня недели: '))
+    WeekDay = int(input('Введите номер дня недели: '))
 if WeekDay==6 or WeekDay==7:
     print('Выходной')
 else:
