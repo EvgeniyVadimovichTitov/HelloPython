@@ -7,8 +7,6 @@ import random
 n = random.randint(1, 5)
 print(n)
 list_one_to_n = []
-count = 1
-while count <= n:
-    list_one_to_n.append(math.factorial(count))
-    count += 1
+for i in range(1, n+1):
+    list_one_to_n.append(math.factorial(i))
 print(list_one_to_n)
