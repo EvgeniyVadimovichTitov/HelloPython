@@ -28,7 +28,8 @@ def Create_File(N):
     data = open('file.txt', 'w')
     count_line = random.randint(1, N)
     for i in range(1, count_line+1):
-        # [-N,N] - интересно было поработать с отрицательными индексами, понимаю, что приводит к повторам используемых элементов
+        # [-N,N] - интересно было поработать с отрицательными индексами, понимаю,
+        # что приводит к повторам используемых элементов
         data.write(str(random.randint(-N, N)) + '\n')
     data.close()
     return data
