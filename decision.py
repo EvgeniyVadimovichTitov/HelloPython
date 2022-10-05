@@ -4,13 +4,14 @@
 # o[2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 import random
-list = []
+users_nums = []
 count = 1
-sum = 0
-for i in range(1, random.randint(6, 20)):
-    list.append(random.randint(-10, 9))
-print(list, end=' -> ')
-while count < len(list):
-    sum += int(list[count])
-    count += 2
-print(sum)
+#sum = 0
+for i in range(1, random.randint(3, 9)):
+    users_nums.append(random.randint(-10, 9))
+print(users_nums, end=' -> ')
+# while count < len(list):
+#     sum += int(list[count])
+#     count += 2
+# print(sum)
+print(f'Sum => {sum(users_nums[1::2])}')
