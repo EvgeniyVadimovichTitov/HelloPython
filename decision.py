@@ -27,3 +27,4 @@ def create_equation(n, string=''):
 
 data = open('file.txt', 'w')
 data.write(create_equation(k))
+data.close()
